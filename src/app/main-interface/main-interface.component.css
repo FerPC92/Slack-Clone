@@ -1,0 +1,396 @@
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #3f0e40; /* slack color sidebar*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /*padding-top: 60px;*/ /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    
+  }
+  
+  /* The navigation menu links */
+  /*.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }*/
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    /*padding: 20px;*/
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/*Comienza edicion del contenido del sidebar */
+  .side-content{
+      color: white;
+      display: flex;
+      justify-content : space-between;
+      padding-right: 12px;
+      padding-left: 16px;
+      
+      padding-top: 10px;
+  }
+
+  .neoFont{
+    font-family: 'Lato', sans-serif;
+    font-size : 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+  }
+
+  .side-content i {
+    font-size: 20px;
+    padding-right : 10px;
+  }
+
+  .fa-angle-down{
+      padding-right: 39px !important;
+      font-size : 15px !important;
+      margin-top: 5px;
+      
+  }
+
+  .input-sidebar{
+    width: 83% !important;
+    height: 5% !important;
+    margin: 10px;
+    background: #653b66;
+    border: none;
+    
+  }
+
+  .input-sidebar::placeholder{
+    color: rgb(190, 190, 190);
+    font-family: 'lato';
+    
+  }
+  .fa-circle{
+    color: rgb(4, 167, 4);
+    margin-left: 18px;
+    font-size: 9px !important;
+    margin-top: 5px;
+  }
+
+  
+.username{
+  display: flex;
+  justify-content: flex-start;
+}
+.username h6{
+  color: rgb(207, 207, 207);
+  margin-left: 10px;
+  font-family: 'monospace';
+  font-size: 15px;
+  padding-bottom: 3px;
+
+}
+
+.icon-chat{
+  height: 14px;
+  margin-left: 5px;
+  margin-right: 6px;
+  padding-bottom: 2px;
+}
+.hilos{
+  color: rgba(173, 173, 173, 0.678);
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.hilos:hover,
+.username,
+.neoFont{
+  color: white;
+  cursor:pointer;
+}
+
+.plus-contain{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(207, 207, 207);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.plus-contain h6{
+  font-family: 'lato';
+  font-size: 15px;
+}
+
+.plus-contain h6:hover{
+  color: white;
+  cursor:pointer;
+
+}
+
+.plus-contain img{
+  height: 18px;
+  filter: invert(100%);
+}
+
+.hash-list{
+  /*position: relative;
+  left: 16px;*/
+  padding: 5px 16px;
+  color: rgba(158, 158, 158, 0.575);
+  font-family: 'arial';
+  
+}
+.fa-lock{
+  margin-right: 7px;
+  color: rgba(173, 173, 173, 0.678);
+  font-size: 12px;
+}
+
+.hash-list h6{
+  margin-top: 5px;
+  line-height: 19px;
+  font-family: 'arial';
+  font-size: 15px;
+}
+
+.hash-list h6:hover{
+  color: white;
+  cursor:pointer;
+}
+
+/*edicion navbar*/
+.bar-icon{
+  margin-left: 11px;
+}
+
+.end-navbar-icons{
+ /* width: 30%;*/
+ position: relative;
+ left: 27%;
+ top: 11px
+
+
+}
+
+.bcn-active{
+  color: white;
+  padding-left: 14px;
+  
+}
+
+.title-bcn{
+  margin-bottom: 0px !important;
+  padding-left: 3px;
+  font-family: 'lato';
+  font-weight: bold;
+}
+
+a.nav-link{
+  padding-top: 0px !important;
+}
+
+.navbar-brand{
+  margin-right: 5px !important;
+  padding-bottom: 0px !important;
+}
+#lock-two{
+  font-size: 15px;
+  color: black;
+  padding-left: 9px;
+
+}
+
+.fa-phone{
+  color: rgb(206, 206, 206);
+  font-size: 20px
+}
+
+.fa-info-circle,
+.fa-cog{
+  color: white;
+  filter:invert(60%);
+  font-size: 20px;
+}
+
+.navbar{
+  padding-bottom: 0px !important;
+}
+
+#searcher{
+  height: 33px;
+  border: 1px solid grey;
+  position: relative ;
+  bottom: 6px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-family: 'lato';
+
+}
+
+.mail-icon{
+  margin-left: 20px;
+  color: rgb(184, 183, 183);
+  position: relative;
+  bottom: 8px;
+  font-size: 26px;
+
+}
+
+.fa-star-o{
+  font-size: 20px;
+  margin-left: 8px;
+  position: relative;
+  bottom: 1px;
+}
+
+.dots{
+  height: 20px;
+  transform: rotate(90deg);
+  margin-bottom: 0px;
+  position:relative;
+  bottom: 7px;
+
+}
+
+.navbar{
+  height: 74px !important;
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+/* edit display msg */
+.contain-msg{
+  height: 480px;
+  overflow-y: scroll;
+  padding-left: 25px;
+}
+
+#input-msg{
+  width: 95%;
+  margin-left: 22px;
+  border:1px solid black;
+  font-family: 'lato';
+  padding-left: 32px;
+  
+}
+#input-msg::placeholder{
+  padding-left: 15px;
+}
+
+
+.fa-paperclip{
+position: relative;
+bottom: 36px;
+left: 28px;
+font-size: 25px;
+transform: rotate(224deg);
+color:rgb(156, 156, 156);
+
+}
+
+.end-input{
+  position: relative;
+  left: 888px;
+  bottom: 48px;
+  font-size: 28px;
+  
+
+}
+
+/* edit info msg usuarios*/
+
+.info-user{
+  display: flex;
+}
+.info-user h3{
+  font-family: 'lato';
+  font-size: 15px;
+  font-weight: bolder;
+  
+}
+
+.info-user p{
+  font-size: 11px;
+  display: block;
+  font-family: 'lato';
+  
+}
+
+.info-user img{
+  height: 50px;
+  border:1px solid rgb(201, 201, 201);
+  margin-right: 11px;
+  
+
+}
+
+.msg{
+  position: relative;
+  left: 60px;
+  width: 90%;
+  background: rgba(243, 243, 243, 0.473);
+  border-radius: 8px;
+  
+}
+
+.selected-tag{
+  background: #1164a3;
+  width: 217px;
+  margin-left: -15px;
+  height: 22px;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+  
+  #searcher,
+  .nav-link,
+  .mail-icon,
+  .dots{
+    display: none !important
+  }
+  .contain-msg{
+    width: 90%;
+    margin: auto;
+    padding-left: 0px;
+    
+  }
+
+  .msg{
+    left:39px;
+    font-size: 11px;
+
+  }
+  #main{
+    padding-right: 68px ;
+  }
+}

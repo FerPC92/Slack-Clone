@@ -1,0 +1,109 @@
+<div id="mySidenav" class="sidenav">
+    <!--<a href="javascript:void(0)" class="closebtn" >&times;</a>  -->
+    <div class="side-content">
+    <h6 class="neoFont">Neoland</h6><i class="fa fa-angle-down" aria-hidden="true"></i>
+    <h6><i class="fa fa-bell-o" aria-hidden="true"(click)="closeNav()"></i></h6> 
+    </div>
+    <div class="username">
+    <i class="fa fa-circle" aria-hidden="true"></i>
+    <h6 class="username-title">Gabriel Moser</h6>
+  </div>
+    <input type="text" class="form-control mb-3 input-sidebar" id="inlineFormInput" placeholder="Ir a...">
+    <h6 class="hilos"><img class="icon-chat" [src]="imgChat" alt="">Hilos de conversaciones</h6>
+      <div class="plus-contain">
+        <h6>Canales</h6>
+        <img [src]="imgPlus" alt="">
+      </div>
+      <div class="hash-list">
+        <div class="selected-tag">
+      <h6 class="bcn-active"><i class="fa fa-lock" aria-hidden="true"></i>bcn-full-stack-boot</h6>
+    </div>
+      <h6># Company-chat</h6>
+      <h6># neoland-all</h6>
+      <h6># neoland</h6>
+      <h6># aminomesale</h6>
+      <h6># bibliotecas</h6>
+      <h6># bc_fs_bcn</h6>
+      <h6># data_thugs</h6>
+      <h6># bank-project</h6>
+      <h6># bc_ds_bcn</h6>
+      <h6># proyecto-grupal2</h6>
+      <h6># pgfintech</h6>
+      <h6># proyecto-grupal-1</h6>
+      <h6># mad-uxui-b-proyectos</h6>
+      <h6># digitaltransf</h6>
+    </div>
+</div>  
+      <!-- Use any element to open the sidenav -->
+      <div id="main">
+        <!--navbar-->
+            <nav class="navbar  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light">            
+                    <a class="navbar-brand" href="#" (click)="openNav()"><span class="navbar-toggler-icon"></span></a>
+                    <div>
+                    <h5 class="title-bcn"><i class="fa fa-lock " id="lock-two"  aria-hidden="true"></i>bcn-full-stack-boot</h5> 
+                  
+                    <div class="navbar-collapse " id="navbarText"> 
+                      <ul class="navbar-nav ">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#"><i class="fa fa-star-o" aria-hidden="true"></i> <span class="bar-icon">|</span> <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="fa fa-user-o" aria-hidden="true"></i><span class="bar-icon">|</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><i class="fa fa-thumb-tack" aria-hidden="true"></i><span class="bar-icon">|</span></a>
+                        </li>
+                      </ul>
+                      <span class="navbar-text">
+                          <a class="nav-link" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Añadir un tema</a>
+                      </span>  
+
+                    </div>
+                  </div>
+                    <div class="end-navbar-icons">
+                        <ul class="navbar-nav ">
+                         <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                          </li>
+                          <li>
+                            <a class="nav-link" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                          </li>
+                          <li>
+                            <a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                          </li>
+                          <li>   
+                              <input id="searcher"class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">          
+                          </li>
+                          <li>
+                            <h3 class="mail-icon">@</h3>
+                          </li>
+                          <li>
+                              <a class="nav-link" href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                          </li>
+                          <li>
+                            <h4><img class="dots" [src]=" imgDots" alt=""></h4>
+                          </li>
+                        </ul> 
+                    </div>
+                  </nav>
+                  <!--end navbar-->
+                  <div class="contain-msg" id="msgContainer">
+                     <div *ngFor="let element of dataMsg ; let i=index">
+                       <div class="info-user">
+                       <img [src]="element['img']" alt="">
+                       <div>
+                        <h3> {{element["user"]}}</h3>
+                        <p> {{element["date"]}}</p>
+                      </div>
+                      </div>    
+                        <p class="msg"> Messege: {{element["text"]}}</p>
+                      </div>
+                                                    
+                  </div>
+                  <input id="input-msg"class="form-control form-control-lg" type="text" placeholder=" Enviar mensaje a bcn-full-stack-boot" (keypress)="getPersonalMsg($event)">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                  <!--<i class="end-input">@</i>
+                  <i id="smile" class="fa fa-smile-o" aria-hidden="true"></i>-->
+
+       
+      </div>
