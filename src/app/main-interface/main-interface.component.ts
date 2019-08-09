@@ -50,7 +50,7 @@ export class MainInterfaceComponent implements OnInit {
         "text"   : (<HTMLInputElement>document.querySelectorAll('#input-msg')[0]).value
         }  
 
-        this._service.post("https://formvalidation.free.beeceptor.com/awesome",PersonalMsg).subscribe((response) => { 
+        this._service.post("https://cors-anywhere.herokuapp.com/https://formvalidation.free.beeceptor.com/awesome",PersonalMsg).subscribe((response) => { 
           console.log(response)  })
 
 
@@ -81,7 +81,7 @@ export class MainInterfaceComponent implements OnInit {
     } else{
 
 
-     this._service.get('http://demo2243680.mockable.io/slack').subscribe(response => {
+     this._service.get('https://cors-anywhere.herokuapp.com/http://demo2243680.mockable.io/slack').subscribe(response => {
      //console.log(response["messages"][0]["user"]) 
      let chatInfo = response["messages"]
 
